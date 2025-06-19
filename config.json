@@ -1,0 +1,10 @@
+{
+  "MAX_VRAM_MB": 11000,
+  "CHECK_INTERVAL": 3600,
+  "commands": [
+    { "cmd": "python script1.py", "vram": 3000 },
+    { "cmd": "python script2.py", "vram": 4000 },
+    { "cmd": "python script3.py", "vram": 2000 },
+    { "cmd": "python script4.py", "vram": 2500 }
+  ]
+}
