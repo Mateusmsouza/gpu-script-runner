@@ -65,7 +65,7 @@ def scheduler(commands, max_vram_mb, check_interval):
             if cmd["vram"] <= available_vram:
                 queue.get()
                 t = Thread(target=launch_command, args=(
-                    cmd, running_processes, lock))
+                    cmd, running_processes, lock, cmd["dir"]))
                 t.start()
                 available_vram -= cmd["vram"]
             else:
